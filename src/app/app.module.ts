@@ -1,3 +1,4 @@
+import { Routes, RouterModule, CanActivate } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +13,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 
+import { IndiceIndexComponent } from './components/indice-index/indice-index.component';
 import { LoginSignupService } from './services/auth/login-signup.service';
 import { TokenService } from './services/auth/token.service';
 import { AuthService } from './services/auth/auth.service';
@@ -29,7 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SignupComponent,
     ProfileComponent,
     RequestResetComponent,
-    ResponseResetComponent
+    ResponseResetComponent,
+    IndiceIndexComponent
+
   ],
   imports: [
     BrowserModule,

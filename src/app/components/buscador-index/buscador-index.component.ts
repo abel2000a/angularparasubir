@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BuscadorService } from '../services/buscador.service';
+import { BuscadorService } from '../../services/buscador.service';
 
 @Component({
   selector: 'app-buscador-index',

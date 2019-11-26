@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IndiceService } from '../services/indice.service';
+import { IndiceService } from '../../services/indice.service';
 
 @Component({
   selector: 'app-indice-index',

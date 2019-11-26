@@ -7,35 +7,18 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 
+import { IndiceIndexComponent } from './components/indice-index/indice-index.component';
+
 import { AfterLoginService } from './services/auth/after-login.service';
 import { BeforeLoginService } from './services/auth/before-login.service';
 
 const appRoutes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent,
-    canActivate: [BeforeLoginService]
-  },
-  {
-    path: 'signup',
-    component: SignupComponent,
-    canActivate: [BeforeLoginService]
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent,
-    canActivate: [AfterLoginService]
-  },
-  {
-    path: 'request-password-reset',
-    component: RequestResetComponent,
-    canActivate: [BeforeLoginService]
-  },
-  {
-    path: 'response-password-reset',
-    component: ResponseResetComponent,
-    canActivate: [BeforeLoginService]
-  },
+  {path: 'login',component: LoginComponent,canActivate: [BeforeLoginService]},
+  {path: 'signup',component: SignupComponent,canActivate: [BeforeLoginService]},
+  {path: 'profile',component: ProfileComponent,canActivate: [AfterLoginService]},
+  {path: 'request-password-reset',component: RequestResetComponent,canActivate: [BeforeLoginService]},
+  {path: 'response-password-reset',component: ResponseResetComponent,canActivate: [BeforeLoginService]},
+  {path: 'indice', component: IndiceIndexComponent },
 ];
 
 @NgModule({
@@ -46,3 +29,4 @@ const appRoutes: Routes = [
   declarations:[]
 })
 export class AppRoutingModule { }
+
