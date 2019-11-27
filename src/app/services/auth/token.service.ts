@@ -7,8 +7,8 @@ import { Injectable } from '@angular/core';
 export class TokenService {
 
 	private iss = {
-		login : 'https://holaangular.herokuapp.com/login',
-		signup : 'https://holaangular.herokuapp.com/signup'
+		login : 'http://localhost:8000/api/login',
+		signup : 'http://localhost:8000/api/signup'
 	}
 
   constructor() { }
@@ -16,7 +16,7 @@ export class TokenService {
   handle(token){
   	this.set(token);
   	console.log(this.isValid());
-  }
+  }	
 
   set(token){
   	localStorage.setItem('token', token);

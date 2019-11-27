@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class IndiceService {
   
-  endPoint = 'https://laravelherokulp2.herokuapp.com/api/mostrar';
+  endPoint = 'http://localhost:8000/api/mostrar';
 
   constructor(private http: HttpClient) {
   }

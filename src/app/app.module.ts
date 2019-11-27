@@ -22,6 +22,9 @@ import { BeforeLoginService } from './services/auth/before-login.service';
 
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { BuscadorIndexComponent } from './components/buscador-index/buscador-index.component';
+import { SugerenciaComponent } from './components/sugerencia/sugerencia.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfileComponent,
     RequestResetComponent,
     ResponseResetComponent,
-    IndiceIndexComponent
+    IndiceIndexComponent,
+    SidebarComponent,
+    BuscadorIndexComponent,
+    SugerenciaComponent,
 
   ],
   imports: [

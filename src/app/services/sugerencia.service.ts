@@ -5,9 +5,10 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class FaculService {
+export class SugerenciaService {
 
-  endPoint = 'http://localhost:8000/api/facultad';
+  
+  endPoint = 'http://localhost:8000/api/comentario';
 
   constructor(private http: HttpClient) {
   }

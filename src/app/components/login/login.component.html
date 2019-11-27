@@ -3,7 +3,7 @@
 
 <div class="card">
 <div class="card">
-<div class="card-header">Login Here</div>
+<div class="card-header">Login </div>
 <div class="card-body">
   <form #loginForm=ngForm (ngSubmit)="onSubmit()" >
     
@@ -26,7 +26,7 @@
     <div class="form-group row">
       <div class="col-sm-10 offset-2">
         <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Sign in</button>
-        <a routerLink="/signup"  class="btn btn-info float-right" >Sign up</a>  
+        <!--<a routerLink="/signup"  class="btn btn-info float-right" >Sign up</a>  -->
       </div>
     </div>
     <small class="float-right">

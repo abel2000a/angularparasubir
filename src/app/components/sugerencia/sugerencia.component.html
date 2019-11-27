@@ -1,0 +1,26 @@
+<table class="table" >
+    <thead class="thead-primary">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">comentario descripcion</th> 
+          <th scope="col">fecha de comentario</th>
+          <th scope="col">Nombre de la persona</th>
+          <th scope="col">celular</th>         
+        </tr>
+      </thead>
+  <tbody class="thead-primary" *ngFor="let n of list; index as i">
+    
+    <tr>
+      <th scope="col">{{ i+1}}</th>
+      <th scope="col">{{ n.comentario_descrip }}</th>
+      <th scope="col">{{ n.comentario_fecha }}</th>
+      <th scope="col">{{ n.persona_nombre }}</th>
+      <th scope="col">{{ n.persona_celular }}</th>
+      
+      <!--
+        <th><button (click)="delete(n.id)">Delete</button></th>
+      --> 
+    </tr>
+    
+  </tbody>
+</table>

@@ -8,6 +8,8 @@ import { RequestResetComponent } from './components/password/request-reset/reque
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 
 import { IndiceIndexComponent } from './components/indice-index/indice-index.component';
+import { BuscadorIndexComponent } from './components/buscador-index/buscador-index.component';
+import { SugerenciaComponent } from './components/sugerencia/sugerencia.component';
 
 import { AfterLoginService } from './services/auth/after-login.service';
 import { BeforeLoginService } from './services/auth/before-login.service';
@@ -19,6 +21,8 @@ const appRoutes: Routes = [
   {path: 'request-password-reset',component: RequestResetComponent,canActivate: [BeforeLoginService]},
   {path: 'response-password-reset',component: ResponseResetComponent,canActivate: [BeforeLoginService]},
   {path: 'indice', component: IndiceIndexComponent },
+  {path: 'buscador', component: BuscadorIndexComponent },
+  {path: 'sugerencia', component: SugerenciaComponent },
 ];
 
 @NgModule({

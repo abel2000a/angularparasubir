@@ -1,19 +1,96 @@
 
-<app-navbar></app-navbar>
+<app-navbar ></app-navbar>
 <ng-snotify>  
 </ng-snotify>
 
+<div class="row" >
+    <div class="col-md-2" >
+            <app-sidebar></app-sidebar>
 
+    </div>
+    <div class="col-md-10">
+        <router-outlet></router-outlet>
+    </div>
+     
+</div>
+ 
+  
+<!-- 
 <div class="row">
-  <div class="hola col-md-2 col-sm-0">
-      <div class="wrapper">
-          <!-- Sidebar -->
-          <nav id="sidebar">
+  <div class="hola col-md-2 col-sm-0">       
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark list-group list-group-vertical" >
+                <a class="navbar-brand" href="#">INICIO</a>
+     
+               <button class="navbar-toggler" type="button" data-toggle="collapse" 
+               data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               
+                 <div class="collapse navbar-collapse list-group list-group-vertical " id="navbarText">
+                 <ul class="navbar-nav mr-auto ">
+                   <li class="nav-item ">
+                     <a class="nav-link" href="buscador">BUSCADOR <span class="sr-only">(current)</span></a>
+                   </li>
+                 </ul>
+               </div> 
+               <div class="collapse navbar-collapse list-group list-group-vertical " id="navbarText">
+                 <ul class="navbar-nav mr-auto ">
+                   <li class="nav-item ">
+                     <a class="nav-link" href="datospersonales">DATOS PERSONALES <span class="sr-only">(current)</span></a>
+                   </li>
+                 </ul>
+               </div>
+               <div class="collapse navbar-collapse list-group list-group-vertical " id="navbarText">
+                 <ul class="navbar-nav mr-auto ">
+                   <li class="nav-item ">
+                     <a class="nav-link" href="https://www.google.com/search?q=ofertas+de+empleo+ingeniero+de+sistemas&rlz=1C1CHBF_esPE874PE874&oq=ofertas+de+empleo+ing+de+&aqs=chrome.1.69i57j0l5.22606j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwjG7fuLo4LmAhWvuVkKHZ0fByMQiYsCKAB6BAgKEAM#htivrt=jobs&htidocid=IOUAQE2fQ6nfb-DEAAAAAA%3D%3D&fpstate=tldetail">OFERTA DE EMPLEOS <span class="sr-only">(current)</span></a>
+                   </li>
+                 </ul>
+               </div> 
+               <div class="collapse navbar-collapse list-group list-group-vertical " id="navbarText">
+                 <ul class="navbar-nav mr-auto ">
+                   <li class="nav-item ">
+                     <a class="nav-link" href="indice">EXPERIENCIA LABORAL <span class="sr-only">(current)</span></a>
+                   </li>
+                 </ul>
+               </div>
+               <div class="collapse navbar-collapse list-group list-group-vertical " id="navbarText">
+                 <ul class="navbar-nav mr-auto ">
+                   <li class="nav-item ">
+                             <img src="http://tusimagenesde.com/wp-content/uploads/2018/01/imagenes-cool-11.jpg" width="200" height="150">
+                             <p><font color="red">HOLA MUNDO</font></p>
+                             <p><font color="red">ADMINISTRADOR</font></p>
+                             <p><font color="red">954546554</font></p>
+                             <p><font color="red">CEL:9595259645</font></p>
+                             <p><font color="red">li.carlos@upeu.edu.pe</font></p>
+                   </li>
+                 </ul>
+               </div>
+               <div class="collapse navbar-collapse list-group list-group-vertical " id="navbarText">
+                   <ul class="navbar-nav mr-auto ">
+                     <li class="nav-item ">
+                       <a class="nav-link" href="#">SALIR <span class="sr-only">(current)</span></a>
+                     </li>
+                   </ul>
+                 </div>
+     
+             </nav>
+
+
+      <div class="wrapper" *ngIf="loggedIn">
+          
+          <nav id="sidebar" >
               <div class="sidebar-header">
                   <h3>Bootstrap Sidebar</h3>
               </div>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+               data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
       
-              <ul class="list-unstyled components">
+              <ul class="list-unstyled components" id="navbarText">
                   <p>Dummy Heading</p>
                   <li class="active">
                       <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
@@ -62,12 +139,9 @@
               </nav>
           </div>
       
-      </div>
-  </div>
-  <div class="container-flesh col-12 col-sm-12-md- col-lg-9 col-xl-10 ">
-  <router-outlet></router-outlet>
-</div>
-</div>
+      </div> -->
+
+  
 
 
 
